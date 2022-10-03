@@ -1,0 +1,78 @@
+.job {
+    @include flex-column;
+    justify-content: center;
+    height: 16rem;
+    &-card {
+        background-color: $sub-color;
+        padding: 2%;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        .job-option {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            .category,
+            .search,
+            .experience,
+            .city {
+                @include flex-column;
+                width: 22%;
+                div {
+                    display: flex;
+                    background-color: $primary-color;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    padding: 5px;
+                    input { 
+                        width: 100%;
+                        border: none;
+                    }
+                }
+
+                label {
+                    margin-bottom: 5px;
+                }
+
+                select {
+                    padding: 9px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+.main-section{
+    display: flex;
+    .position{
+        flex: 3;
+        margin-left:3%;
+      
+        .card{
+            width: 90%;
+        }
+    }&-right{
+        flex: 1;
+        margin: 3%;
+        margin-top: 5.3%;
+        font-size: small;
+        .card{
+            @include flex-column;
+            gap:20px;
+            .images{
+                display: flex;
+                justify-content: center;
+                margin: 0;
+                img{
+                width: 80%;
+                border-radius: 10px;
+            }
+            }
+            &-right{
+                display: flex;
+                flex-direction: row;
+                button{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

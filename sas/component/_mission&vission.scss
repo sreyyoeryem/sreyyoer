@@ -1,0 +1,42 @@
+.our {
+    &-mission-vission {
+        @include flex;
+        background: url(../../images/4214558.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 30rem;
+
+        h1 {
+            font-size: 3rem;
+            color: $primary-color;
+            text-shadow: 5px 5px 3px $secondary-color;
+            font-weight: bold;
+        }
+    }
+
+    &-mission {
+        display: flex;
+        padding: 0 10% 0 10%;
+
+        div {
+            @include flex-column;
+            flex: 1;
+            justify-content: center;
+        }
+    }
+
+    &-vission {
+        display: flex;
+        background: url(../../images/poknbgfty.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 5% 10% 5% 10%;
+        div {
+            @include flex-column;
+            flex: 1;
+            justify-content: center;
+        }
+    }
+
+}

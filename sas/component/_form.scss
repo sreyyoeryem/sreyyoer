@@ -1,0 +1,68 @@
+@import '../gobal/mixin';
+
+.input {
+    flex: 1;
+}
+
+main {
+    @include flex;
+    background: url(../../images/compliances-for-change-in-registered-office-of-a-company.jpg);
+    background-size: cover;
+    height: 50rem;
+    margin-top: -2px;
+    form {
+        @include flex-column;
+        padding: 15px;
+        border-radius: 10px;
+        width: 50%;
+        margin: auto;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        background-color: #313e65d5;
+        color:$sub-color;
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: $secondary-color;
+        }
+        
+        .firstname-lastname {
+            display: flex;
+            justify-content: space-between;
+            .name {
+                @include flex-column;
+                @extend .input;
+                @include input;
+                input {
+                    @include input;
+                    margin-bottom: 15px;
+                    width: 97%;
+                    background-color: $sub-color;
+                }
+            }
+        }
+
+        .verification,
+        .email,
+        .password {
+            @include flex-column;
+            @extend .input;
+
+            input {
+                @include input;
+                margin-bottom: 15px;
+            }
+
+            .input-passord {
+                @include flex-column;
+                @extend .input;
+            }
+        }
+        a:hover{
+            color: $secondary-color;
+        }
+        a {
+            color: $primary-color;
+            margin-left: 5px;
+        }
+    }
+}

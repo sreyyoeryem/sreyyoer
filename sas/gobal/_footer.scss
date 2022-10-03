@@ -1,0 +1,49 @@
+footer {
+    background-color: $main-color;
+    color: $primary-color;
+    font-size: small;
+    margin: 0;
+    hr{
+        border: 1px solib $primary-color;
+    }
+    .information {
+        display: flex;
+        padding: 4px;
+        .about {
+            @include flex-column;
+            flex: 2;
+            align-items: center;
+            margin: 10px;
+
+            p {
+                margin-top: -15px;
+            }
+
+            img {
+                max-width: 250px;
+            }
+        }
+
+        .Connect {
+            flex: 1;
+            div {
+                @include flex-center;
+                flex-direction: row;
+                margin-top: -15px;
+            }
+        }
+
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-right: 10%;
+        padding: 10px;
+        img {
+            width: 30px;
+            border-radius: 50%;
+        }
+    }
+}

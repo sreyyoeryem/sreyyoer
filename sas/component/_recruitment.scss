@@ -1,0 +1,57 @@
+.recruitment {
+    @include flex-column;
+    align-items: center;
+    justify-content:space-around;
+    height: 80vh;
+    background: url(../../images/poknbgfty.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    &-card {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 10px;
+        .sub-card {
+            @include flex-column;
+            background-color: $primary-color;
+            position: relative;
+            width: 20%;
+            height: 100%;
+            padding: 2%;
+            border-radius: 10px;
+            .icons-top {
+                position: absolute;
+                bottom: 60%;
+                padding: 15%;
+                border-radius: 50%;
+                margin: 20%;
+                background-color:$main-color;
+                color:$primary-color;
+                i{
+                    font-size:3vw;
+                }
+            }
+
+            div {
+                @include flex-column;
+                align-items: center;
+                h2 {
+                    font-size: 2vw;             
+                }
+
+                p {
+                    margin-top: 0;
+                    text-align: center;
+                    font-size: 1vw;
+                }
+            }
+        }
+        .sub-card:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .sub-card:hover .icons-top{
+                background-color:$secondary-color;
+            }
+    }
+}

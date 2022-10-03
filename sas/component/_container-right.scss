@@ -1,0 +1,77 @@
+.container-right {
+    @extend .btn;
+    margin: 3%;
+    flex: 3;
+    background-color: $sub-color;
+    padding: 20px;
+    height: 100%;
+
+    .top {
+        @include flex;
+        justify-content: flex-start;
+        gap: 3%;
+
+        img {
+            width: 30%;
+            border-radius: 5px;
+        }
+
+        .button {
+            display: flex;
+            width: 60%;
+            justify-content: space-evenly;
+
+            div button {
+                width: 90%;
+            }
+        }
+    }
+
+    .description {
+        span {
+            color: rgb(91, 148, 235);
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        b {
+            line-height: 2;
+            font-size: 18px;
+        }
+
+    }
+
+    .form-Apply {
+        @include flex;
+
+        form {
+            width: 99%;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px 5px rgb(155, 155, 173);
+
+            h3 {
+                text-align: center;
+            }
+
+            padding: 10px;
+
+            input {
+                @include input;
+                width: 90%;
+                padding: 15px;
+                margin-bottom: 15px;
+            }
+
+            input[type=file] {
+                background-color:$primary-color
+            }
+
+            .button {
+                @include flex;
+                button{
+                    width: 100px;
+                }
+            }
+        }
+    }
+}

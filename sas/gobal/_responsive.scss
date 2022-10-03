@@ -1,0 +1,162 @@
+@media only screen and (max-width: 1024px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+        margin: 0;
+    }
+    .main-section{
+        @include flex-column;
+    }
+    .main-section-right{
+        @include flex-column;
+        align-items: center;
+        .main-section-card{
+            display: flex;
+        }
+    }
+    .input-passord i,
+    .password i {
+        display: none;
+    }
+
+    .firstname-lastname {
+        flex-direction: column;
+
+        input {
+            width: 95%;
+        }
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    .nav-left {
+        display: flex;
+
+        img {
+            display: none;
+        }
+    }
+
+    .nav-right {
+        @include flex-column;
+        div {
+            margin-top: -10px;
+            button {
+                a {
+                    font-size: smaller;
+                }
+            }
+        }
+    }
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .header-left {
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .header-right {
+            margin-top: 100px;
+        }
+    }
+
+    .position .card {
+        @include flex-column;
+
+        &-left {
+            flex-direction: column;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .interview {
+        @include flex-column;
+
+        &-right {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .recruitment {
+        text-align: center;
+        height: 30vh;
+
+        &-card {
+            @include flex-center;
+
+            &-sub-card {
+                width: 100%;
+                height: 50%;
+            }
+        }
+
+        &-sub-card:nth-last-child(1) {
+            display: none;
+        }
+    }
+    .main-section-right{
+        .main-section-card{
+            @include flex-column;
+            align-items: center;
+        }
+    }
+    .our{
+        &-vission{
+            @include flex-column;
+            .vission-right{
+                @include flex-center;
+            }
+        }
+        &-mission{
+            display: flex;
+            flex-direction: column-reverse;
+            .mission-right{
+                @include flex-center;
+            }
+
+        }
+    }
+    footer {
+        .information .about {
+            display: none;
+        }
+
+        .information .Connect-1 {
+            display: none;
+        }
+
+        .copyright {
+            display: flex;
+            justify-content: center;
+            margin-right: 0;
+        }
+    }
+
+    .top {
+        flex-direction: column;
+    }
+    form{
+        width: 80%;
+    }
+    .cv-details{
+        display: flex;
+        flex-direction: column-reverse;
+        .container-right{
+            margin-top: 90px;
+            img{
+                width: 100%;
+            }
+        }
+        .container-left{
+            @include flex-center;
+        }
+    }
+}

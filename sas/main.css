@@ -1,0 +1,864 @@
+.btn, .container-right, .singUp button, .btn-card-secondary, .btn-card-primary, .btn-login,
+.btn-register {
+  border: none;
+  border-radius: 5px;
+}
+
+.link, .btn-card-secondary a, .btn-card-primary a, .btn-login a,
+.btn-register a {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+}
+
+.btn-login,
+.btn-register {
+  background-color: transparent;
+  color: white;
+  padding: 0;
+  margin-right: 5px;
+}
+.btn-login:hover a,
+.btn-register:hover a {
+  color: #ff9203;
+}
+
+.btn-card-primary {
+  background-color: #ff9203;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  width: 100%;
+}
+.btn-card-secondary {
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(34, 142, 179);
+  color: white;
+  width: 100%;
+}
+.singUp button {
+  background-color: #ff9203;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  flex-direction: row;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #313E65;
+  z-index: 1000;
+}
+nav .nav-left {
+  display: flex;
+  flex-direction: row;
+  flex: 10;
+  margin: 0;
+}
+nav .nav-left img {
+  width: 90px;
+}
+nav .nav-left ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  margin-left: -50px;
+}
+nav .nav-left ul li {
+  padding: 15px;
+}
+nav .nav-left ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  text-align: center;
+}
+nav .nav-left ul li:hover {
+  background-color: #ff9203;
+}
+nav .nav-right {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-right: 1%;
+}
+nav .nav-right img {
+  width: 40px;
+  border-radius: 50%;
+}
+nav .nav-right div {
+  display: flex;
+  margin-left: 5px;
+}
+nav .nav-right div p {
+  margin-right: 5px;
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+  background-color: #313E65;
+  color: white;
+  height: 75vh;
+}
+header .header-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header .header-left h1 {
+  font-size: 3.5vw;
+  margin: 5px;
+}
+header .header-left h1 span {
+  color: #ff9203;
+}
+header .header-left div {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+header .header-left .search-bar {
+  background-color: white;
+  max-width: 60%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10%;
+}
+header .header-left .search-bar i {
+  color: black;
+}
+header .header-left .search-bar input {
+  border: none;
+  width: 100%;
+  padding: 5px;
+  background: transparent;
+}
+header .header-left .popular p {
+  font-size: 1.5vw;
+}
+header .header-left .popular div {
+  border-radius: 20px;
+  margin: 5px;
+  padding: 2px;
+  background-color: white;
+  color: black;
+}
+header .header-left .popular div p {
+  font-size: 1vw;
+}
+header .header-right {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+}
+header .header-right img {
+  width: 50%;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: #ECF0F3;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.card-left {
+  display: flex;
+  flex: 1;
+  margin: 10px;
+}
+.card-left div {
+  margin-left: 10px;
+}
+.card-left div span {
+  color: red;
+}
+.card-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+.card img {
+  width: 20%;
+  height: 100%;
+}
+
+.position {
+  display: flex;
+  flex-direction: column;
+}
+.position-main, .position-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2%;
+}
+
+.interview {
+  display: flex;
+  margin-top: 10px;
+}
+.interview-left {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  justify-content: center;
+}
+.interview-left p {
+  margin: 5px 0 0 0;
+}
+.interview-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.interview-right img {
+  width: 80%;
+  height: 70%;
+}
+
+footer {
+  background-color: #313E65;
+  color: white;
+  font-size: small;
+  margin: 0;
+}
+footer hr {
+  border: 1px solib white;
+}
+footer .information {
+  display: flex;
+  padding: 4px;
+}
+footer .information .about {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  align-items: center;
+  margin: 10px;
+}
+footer .information .about p {
+  margin-top: -15px;
+}
+footer .information .about img {
+  max-width: 250px;
+}
+footer .information .Connect {
+  flex: 1;
+}
+footer .information .Connect div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: -15px;
+}
+footer .copyright {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-right: 10%;
+  padding: 10px;
+}
+footer .copyright img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.our-mission-vission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../images/4214558.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 30rem;
+}
+.our-mission-vission h1 {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 5px 5px 3px #ff9203;
+  font-weight: bold;
+}
+.our-mission {
+  display: flex;
+  padding: 0 10% 0 10%;
+}
+.our-mission div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+}
+.our-vission {
+  display: flex;
+  background: url(../../images/poknbgfty.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5% 10% 5% 10%;
+}
+.our-vission div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+}
+
+.recruitment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 80vh;
+  background: url(../../images/poknbgfty.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+.recruitment-card {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 10px;
+}
+.recruitment-card .sub-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: relative;
+  width: 20%;
+  height: 100%;
+  padding: 2%;
+  border-radius: 10px;
+}
+.recruitment-card .sub-card .icons-top {
+  position: absolute;
+  bottom: 60%;
+  padding: 15%;
+  border-radius: 50%;
+  margin: 20%;
+  background-color: #313E65;
+  color: white;
+}
+.recruitment-card .sub-card .icons-top i {
+  font-size: 3vw;
+}
+.recruitment-card .sub-card div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recruitment-card .sub-card div h2 {
+  font-size: 2vw;
+}
+.recruitment-card .sub-card div p {
+  margin-top: 0;
+  text-align: center;
+  font-size: 1vw;
+}
+.recruitment-card .sub-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.recruitment-card .sub-card:hover .icons-top {
+  background-color: #ff9203;
+}
+
+.job {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 16rem;
+}
+.job-card {
+  background-color: #ECF0F3;
+  padding: 2%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.job-card .job-option {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.job-card .job-option .category,
+.job-card .job-option .search,
+.job-card .job-option .experience,
+.job-card .job-option .city {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+}
+.job-card .job-option .category div,
+.job-card .job-option .search div,
+.job-card .job-option .experience div,
+.job-card .job-option .city div {
+  display: flex;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+.job-card .job-option .category div input,
+.job-card .job-option .search div input,
+.job-card .job-option .experience div input,
+.job-card .job-option .city div input {
+  width: 100%;
+  border: none;
+}
+.job-card .job-option .category label,
+.job-card .job-option .search label,
+.job-card .job-option .experience label,
+.job-card .job-option .city label {
+  margin-bottom: 5px;
+}
+.job-card .job-option .category select,
+.job-card .job-option .search select,
+.job-card .job-option .experience select,
+.job-card .job-option .city select {
+  padding: 9px;
+  border-radius: 10px;
+}
+
+.main-section {
+  display: flex;
+}
+.main-section .position {
+  flex: 3;
+  margin-left: 3%;
+}
+.main-section .position .card {
+  width: 90%;
+}
+.main-section-right {
+  flex: 1;
+  margin: 3%;
+  margin-top: 5.3%;
+  font-size: small;
+}
+.main-section-right .card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-section-right .card .images {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.main-section-right .card .images img {
+  width: 80%;
+  border-radius: 10px;
+}
+.main-section-right .card-right {
+  display: flex;
+  flex-direction: row;
+}
+.main-section-right .card-right button {
+  width: 100%;
+}
+
+.input, main form .verification .input-passord,
+main form .email .input-passord,
+main form .password .input-passord, main form .verification,
+main form .email,
+main form .password, main form .firstname-lastname .name {
+  flex: 1;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../images/compliances-for-change-in-registered-office-of-a-company.jpg);
+  background-size: cover;
+  height: 50rem;
+  margin-top: -2px;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: rgba(49, 62, 101, 0.8352941176);
+  color: #ECF0F3;
+}
+main form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff9203;
+}
+main form .firstname-lastname {
+  display: flex;
+  justify-content: space-between;
+}
+main form .firstname-lastname .name {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+main form .firstname-lastname .name input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 97%;
+  background-color: #ECF0F3;
+}
+main form .verification,
+main form .email,
+main form .password {
+  display: flex;
+  flex-direction: column;
+}
+main form .verification input,
+main form .email input,
+main form .password input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+main form .verification .input-passord,
+main form .email .input-passord,
+main form .password .input-passord {
+  display: flex;
+  flex-direction: column;
+}
+main form a:hover {
+  color: #ff9203;
+}
+main form a {
+  color: white;
+  margin-left: 5px;
+}
+
+.card-smal {
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 5px rgb(204, 197, 197);
+}
+.card-smal p {
+  text-align: center;
+}
+.card-smal .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-smal .image img {
+  margin-top: 2%;
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.card-smal:hover {
+  box-shadow: 1px 1px 6px 7px rgb(201, 180, 135);
+}
+
+a p {
+  color: black;
+}
+
+.cv-details {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5%;
+}
+.cv-details .container-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 2%;
+}
+.cv-details .container-left .images img {
+  width: 100%;
+  border-radius: 5px;
+}
+.cv-details .container-left .card {
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 1px 1px 5px 5px rgb(204, 197, 197);
+  display: flex;
+  flex-direction: column;
+}
+.cv-details .container-left .card .card-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  flex-direction: column;
+}
+.cv-details .container-left .card .card-top .name {
+  margin-top: 3%;
+}
+.cv-details .container-left .card .card-top img {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.cv-details .container-left .card .card-top .profas img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  margin: -35px;
+}
+.cv-details .container-left .card .icon {
+  display: flex;
+  align-items: center;
+}
+.cv-details .container-left .card .icon i {
+  padding: 10px;
+  color: white;
+  margin-right: 5%;
+  border-radius: 5px;
+  background-color: rgb(34, 142, 179);
+}
+.cv-details .container-left .card button {
+  margin: 0;
+  margin-top: 2%;
+}
+
+.container-right {
+  margin: 3%;
+  flex: 3;
+  background-color: #ECF0F3;
+  padding: 20px;
+  height: 100%;
+}
+.container-right .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3%;
+}
+.container-right .top img {
+  width: 30%;
+  border-radius: 5px;
+}
+.container-right .top .button {
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+}
+.container-right .top .button div button {
+  width: 90%;
+}
+.container-right .description span {
+  color: rgb(91, 148, 235);
+  font-size: 18px;
+  line-height: 2;
+}
+.container-right .description b {
+  line-height: 2;
+  font-size: 18px;
+}
+.container-right .form-Apply {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-right .form-Apply form {
+  width: 99%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 5px rgb(155, 155, 173);
+  padding: 10px;
+}
+.container-right .form-Apply form h3 {
+  text-align: center;
+}
+.container-right .form-Apply form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 90%;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.container-right .form-Apply form input[type=file] {
+  background-color: white;
+}
+.container-right .form-Apply form .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-right .form-Apply form .button button {
+  width: 100px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    margin: 0;
+  }
+  .main-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-section-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-section-right .main-section-card {
+    display: flex;
+  }
+  .input-passord i,
+.password i {
+    display: none;
+  }
+  .firstname-lastname {
+    flex-direction: column;
+  }
+  .firstname-lastname input {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 428px) {
+  .nav-left {
+    display: flex;
+  }
+  .nav-left img {
+    display: none;
+  }
+  .nav-right {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-right div {
+    margin-top: -10px;
+  }
+  .nav-right div button a {
+    font-size: smaller;
+  }
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  header .header-left {
+    align-items: center;
+    justify-content: flex-end;
+  }
+  header .header-right {
+    margin-top: 100px;
+  }
+  .position .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .position .card-left {
+    flex-direction: column;
+  }
+  .position .card-left img {
+    width: 100%;
+  }
+  .interview {
+    display: flex;
+    flex-direction: column;
+  }
+  .interview-right {
+    display: flex;
+    justify-content: center;
+  }
+  .recruitment {
+    text-align: center;
+    height: 30vh;
+  }
+  .recruitment-card {
+    display: flex;
+    align-items: center;
+  }
+  .recruitment-card-sub-card {
+    width: 100%;
+    height: 50%;
+  }
+  .recruitment-sub-card:nth-last-child(1) {
+    display: none;
+  }
+  .main-section-right .main-section-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .our-vission {
+    display: flex;
+    flex-direction: column;
+  }
+  .our-vission .vission-right {
+    display: flex;
+    align-items: center;
+  }
+  .our-mission {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .our-mission .mission-right {
+    display: flex;
+    align-items: center;
+  }
+  footer .information .about {
+    display: none;
+  }
+  footer .information .Connect-1 {
+    display: none;
+  }
+  footer .copyright {
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+  }
+  .top {
+    flex-direction: column;
+  }
+  form {
+    width: 80%;
+  }
+  .cv-details {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .cv-details .container-right {
+    margin-top: 90px;
+  }
+  .cv-details .container-right img {
+    width: 100%;
+  }
+  .cv-details .container-left {
+    display: flex;
+    align-items: center;
+  }
+}
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}

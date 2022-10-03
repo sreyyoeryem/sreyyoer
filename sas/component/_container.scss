@@ -1,0 +1,21 @@
+@import '../gobal/nav';
+@import 'header';
+@import 'jobboard';
+@import 'interview';
+@import '../gobal/footer';
+@import 'mission&vission';
+@import '../gobal/variable';
+@import 'recruitment';
+@import 'position';
+@import 'form';
+@import 'cardsmal';
+@import 'container-left';
+@import 'container-right';
+@import '../gobal/responsive';
+@import '../gobal/mixin';
+
+.container{
+    font-family: $global-font-family;
+    display: flex;
+    flex-direction: column;
+}

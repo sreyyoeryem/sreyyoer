@@ -1,0 +1,23 @@
+.card-smal{
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 5px rgb(204, 197, 197) ;
+    p{
+       text-align: center
+    }
+    .image{
+        @include flex;
+        img{
+            margin-top: 2%;
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+        }
+    }
+}
+.card-smal:hover{
+    box-shadow: 1px 1px 6px 7px rgb(201, 180, 135); ;
+}
+a p{
+    color: black;
+}

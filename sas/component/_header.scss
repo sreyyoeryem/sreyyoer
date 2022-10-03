@@ -1,0 +1,76 @@
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    background-color: $main-color;
+    color: $primary-color;
+    height: 75vh;
+    .header-left {
+        flex: 2;
+        @include flex-column;
+        justify-content: center;
+
+        h1 {
+            font-size: 3.5vw;
+            margin: 5px;
+
+            span {
+                color: $secondary-color;
+            }
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+        }
+
+        .search-bar {
+            background-color: $primary-color;
+            max-width: 60%;
+            padding:10px;
+            margin-bottom: 10px;
+            margin-top: 10%;
+
+            i {
+                color: black;
+            }
+
+            input {
+                border: none;
+                width: 100%;
+                padding: 5px;
+                background: transparent;
+            }
+        }
+
+        .popular {
+            p{
+                font-size: 1.5vw;
+            }
+            div {
+                border-radius: 20px;
+                margin: 5px;
+                padding: 2px;
+                background-color: $primary-color;
+                color: black;
+                p{
+                    font-size: 1vw;
+                }
+            }
+        }
+
+    }
+
+    .header-right {
+        display: flex;
+        flex: 2;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 50%;
+
+        }
+    }
+}

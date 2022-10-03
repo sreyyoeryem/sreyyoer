@@ -1,0 +1,10 @@
+@import '../gobal/card';
+.position{
+    @include flex-column;
+    &-main,&-header{
+        @include flex-column;
+        align-items: center;
+        margin: 2%;
+    }
+   
+}

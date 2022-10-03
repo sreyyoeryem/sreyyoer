@@ -1,0 +1,65 @@
+@import 'variable';
+
+.btn {
+    border: none;
+    border-radius: 5px;
+}
+
+.link {
+    text-decoration: none;
+    color: $primary-color;
+    font-size: larger;
+}
+
+.btn-login,
+.btn-register {
+    @extend .btn;
+    background-color: transparent;
+    color: $primary-color;
+    padding: 0;
+    margin-right: 5px;
+
+    a {
+        @extend .link;
+    }
+}
+
+.btn-login:hover a,
+.btn-register:hover a {
+    color: $secondary-color;
+}
+
+.btn-card {
+
+    &-primary {
+        background-color: $secondary-color;
+        @extend .btn;
+        padding: 10px;
+        margin: 10px;
+        color: $primary-color;
+        width: 100%;
+        a {
+            @extend .link;
+        }
+    }
+
+    &-secondary {
+        @extend .btn;
+        padding: 10px;
+        margin: 10px;
+        background-color: $button-secondary;
+        color: $primary-color;
+        width: 100%;
+        a {
+            @extend .link;
+        }
+    }
+}
+
+.singUp button {
+    @extend .btn;
+    background-color: $secondary-color;
+    padding: 10px;
+    margin: 10px;
+    color: $primary-color;
+}

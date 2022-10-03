@@ -1,0 +1,21 @@
+.interview{
+    display: flex;
+    margin-top: 10px;
+    &-left{
+        @include flex-column;
+        padding: 10%;
+        justify-content: center;
+        p{
+            margin: 5px 0 0 0 ;
+
+        }
+    }
+    &-right{
+        display: flex;
+        justify-content: flex-end;
+        img{
+            width: 80%;
+            height: 70%;
+        }
+    }
+}
